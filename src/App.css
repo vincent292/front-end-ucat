@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-simple {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a89797;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-simple h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
