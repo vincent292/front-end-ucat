@@ -69,6 +69,14 @@ const InfoMarketing: React.FC = () => {
     setEditingId(infoMarketing.id!);
   };
 
+  // Logic for sending WhatsApp message
+  const sendWhatsAppMessage = (phone: string) => {
+    const formattedPhone = phone.replace(/\D/g, ""); // Eliminar caracteres no numéricos
+    const message = `Hola, ${formattedPhone}! Estamos en contacto.`;
+    const url = `https://wa.me/${formattedPhone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank"); // Abrir WhatsApp Web en una nueva pestaña
+  };
+
   useEffect(() => {
     fetchInfoMarketing();
   }, []);
@@ -141,6 +149,7 @@ const InfoMarketing: React.FC = () => {
               <td>
                 <button onClick={() => handleEdit(info)}>Editar</button>
                 <button onClick={() => handleDelete(info.id!)}>Eliminar</button>
+                <button onClick={() => sendWhatsAppMessage(info.celular)}>Enviar WhatsApp</button>
               </td>
             </tr>
           ))}

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../Styles/index.css";
-import Secction2 from '../components/Secction2'
+import Secction2 from "../components/Secction2";
+import photo1 from "../media/photo1.webp";
+import photo2 from "../media/photo2.webp";
+import photo3 from "../media/photo3.webp";
 
 
 const Home = () => {
@@ -25,9 +28,7 @@ const Home = () => {
               onMouseEnter={() => handleMouseEnter("about")}
               onMouseLeave={handleMouseLeave}
             >
-              <a  className="menu-link">
-                Quienes Somos
-              </a>
+              <a className="menu-link">Quienes Somos</a>
               {openDropdown === "about" && (
                 <ul className="dropdown">
                   <li>
@@ -96,94 +97,78 @@ const Home = () => {
 
       <section id="hero-section" className="secction1">
         <div className="div_h1_1">
-        <h1 className="h1_1">
-          Aprende A tu manera
-          <br />
-        </h1>
+          <h1 className="h1_1">
+            Aprende A tu manera
+            <br />
+          </h1>
         </div>
 
         <div className="div_h1_2">
-        <h1 className="h1_2">
-          Bachiller En humanidades
-          <br />
-        </h1>
+          <h1 className="h1_2">
+            Bachiller En humanidades
+            <br />
+          </h1>
         </div>
 
         <div className="div_h1_3">
-        <h1 className="h1_3">
-          secundaria
-          <br />
-        </h1>
+          <h1 className="h1_3">
+            secundaria
+            <br />
+          </h1>
         </div>
       </section>
 
       <Secction2 />
 
-
-
-
       <section id="programs-section" className="programs-section">
         <div className="programs-container">
-          <h2>Nuestros Programas</h2>
+          <h2>Nuestros Campus</h2>
           <div className="programs-list">
-            <div className="program-card">
-              <div className="card-info">
-                <h3>Programador Front-end</h3>
-                <p className="title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt vero corporis incidunt saepe qui commodi quasi neque
-                  veniam quam, aspernatur est beatae maxime animi sed reiciendis
-                  mollitia ducimus veritatis repellendus?
+            <div className="card">
+              <img
+                src={photo1}
+                alt="Card Image"
+                className="card__image"
+              />
+              <div className="card__content">
+                <p className="card__title">La Paz</p>
+                <p className="card__description">
+                Los colegios cuentan con un equipo de docentes capacitados que guían a los estudiantes en su aprendizaje, fomentando tanto su desarrollo intelectual como emocional. Además, suelen ofrecer una variedad de actividades extracurriculares, como deportes y arte, para complementar la formación integral de los estudiantes.
                 </p>
-                <button className="program-button">+ Info</button>
               </div>
             </div>
-            <div className="program-card">
-              <div className="card-info">
-                <h3>Programador Full-Stack</h3>
-                <p className="title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt vero corporis incidunt saepe qui commodi quasi neque
-                  veniam quam, aspernatur est beatae maxime animi sed reiciendis
-                  mollitia ducimus veritatis repellendus?
+
+            <div className="card">
+              <img
+                src={photo2}
+                alt="Card Image"
+                className="card__image"
+              />
+              <div className="card__content">
+                <p className="card__title">Cochabamba</p>
+                <p className="card__description">
+                Una sucursal de un colegio es una extensión o unidad adicional de la institución principal, ubicada en otra zona geográfica para brindar acceso a la educación en un área diferente. Mantiene la misma filosofía educativa, programas académicos y estándares de calidad, permitiendo que más estudiantes se beneficien de los recursos y servicios de la institución sin tener que desplazarse grandes distancias.
                 </p>
-                <button className="program-button">+ Info</button>
               </div>
             </div>
-            <div className="program-card">
-              <div className="card-info">
-                <h3>Programador Python</h3>
-                <p className="title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt vero corporis incidunt saepe qui commodi quasi neque
-                  veniam quam, aspernatur est beatae maxime animi sed reiciendis
-                  mollitia ducimus veritatis repellendus?
+            <div className="card">
+              <img
+                src={photo3}
+                alt="Card Image"
+                className="card__image"
+              />
+              <div className="card__content">
+                <p className="card__title">Santa Cruz</p>
+                <p className="card__description">
+                Una sucursal de un colegio es un establecimiento complementario a la sede principal que ofrece los mismos servicios educativos, pero en una ubicación alternativa. Está diseñada para atender a estudiantes de diferentes zonas, asegurando que la educación y los valores de la institución se mantengan consistentes y accesibles en diversas regiones.
                 </p>
-                <button className="program-button">+ Info</button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="features-section" className="features-section">
-        <div className="features-container">
-          <ul className="features-list">
-            <li className="check">
-              <span className="loader"></span>Flexibilidad de horarios
-            </li>
-            <li className="check">
-              <span className="loader"></span>Soporte 1:1
-            </li>
-            <li className="check">
-              <span className="loader"></span>100% online
-            </li>
-            <li className="check">
-              <span className="loader"></span>Asistencia financiera
-            </li>
-          </ul>
-        </div>
-      </section>
+      
 
       <section id="ready-section" className="ready-section">
         <h2>Listo para programar?</h2>

@@ -1,5 +1,141 @@
-.footer{
-    background-color:#007bff;
-    
-    
+.footer {
+    background-color: #001434;
+    background-size: 200vh; /* Esto es opcional si no tienes una imagen */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    position: relative; /* Por si necesitas posicionamiento */
+    margin: 0; /* Elimina márgenes externos */
+    padding: 20px 0; /* Añade espacio interno para el contenido */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
 }
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+  
+
+
+  .sec-2 {
+    background-color: #f4f4f4; /* Fondo claro */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .sec-2 h1 {
+    font-size: 24px;
+    color: #333; /* Título oscuro */
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .sec-2 ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sec-2 ul li {
+    font-size: 16px;
+    color: #555; /* Texto gris */
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer; /* Cursor de enlace */
+  }
+  
+  .sec-2 ul li:hover {
+    background-color: #e0e0e0; /* Fondo al pasar el ratón */
+    color: #000; /* Texto más oscuro */
+  }
+  
+
+  .pdiv{
+    color: #fff;
+  }

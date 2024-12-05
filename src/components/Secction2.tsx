@@ -3,21 +3,29 @@ import  "../Styles/Secction.css";
 
 function Secction2() {
   return (
-    <section id="about-section" className="about-section">
-      <div className="flex-container">
-        <div className="flex-items1">
-          <h1 className="flex_h1">Nuestras Instalaciones</h1>
-        </div>
-        <div className="flex-items2">
-          <h1 className="flex_h1">Primaria</h1>
-        </div>
-        <div className="flex-items3">
-          <h1 className="flex_h1">Secundaria</h1>
-        </div>
-        <div className="flex-items4">
-          <h1 className="h1-bl">kinder y prekinder </h1>
-        </div>
-      </div>
+    <section  className="about-section">
+     <div className="cards">
+    <div className="card red">
+        <p className="tip">Kinder</p>
+    </div>
+    <div className="card blue">
+        <p className="tip">Primaria</p>
+    </div>
+    <div className="card green">
+        <p className="tip">Secundaria</p>   
+    </div>
+</div>
+<div className="cards">
+    <div className="card red">
+        <p className="tip">internacionalización</p>      
+    </div>
+    <div className="card blue">
+        <p className="tip">Intercambios</p>
+    </div>
+    <div className="card green">
+        <p className="tip">Nacional</p>   
+    </div>
+    </div>
     </section>
   );
 }

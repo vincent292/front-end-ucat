@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="logo1">
-        <h1 className="logo1-h1">Logo</h1>
+        
       </div>
       <div>
         {/* Muestra el botón correspondiente según el estado de autenticación */}
